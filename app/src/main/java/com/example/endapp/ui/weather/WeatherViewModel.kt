@@ -18,18 +18,17 @@ import java.io.InputStreamReader
 import kotlin.concurrent.thread
 
 class WeatherViewModel(application: Application) : AndroidViewModel(application){
-    private val  _cities:MutableLiveData<List<City>> = MutableLiveData() //数据是可以改变的
-
-    val cities: LiveData<List<City>> = _cities //外面可以看，但不能修改
+    private val _cities:MutableLiveData<List<City>> = MutableLiveData() //可以改变数据
+    val cities:LiveData<List<City>> = _cities//外面可以观察到的
 
     init {
         thread {//多线程
             val str = readFileFromRaw(R.raw.citycode) //解析JSON文件
             val gson = Gson()
-            val CityType = object : TypeToken<List<City>>() {}.type//获得一个类型 内部类
-            var cts: List<City> = gson.fromJson(str, CityType)//转成列表对象 获得字符串str转成CityType
-            cts = cts.filter { it.city_code != "" }//没有省份 只剩下了城市
-            _cities.postValue(cts) //子线程中更新用Postvalue 实时的
+            val CityType = object : TypeToken<List<City>>(){}.type//获得一个类型 内部类
+            var cts:List<City> = gson.fromJson(str,CityType)//转成列表对象 获得字符串str转成CityType
+            cts = cts.filter {it.city_code != ""}//没有省份 只剩下了城市
+            _cities.postValue(cts) //子线程中更新数据用postValue
         }
     }
     fun readFileFromRaw(rawName: Int): String? {
