@@ -28,6 +28,11 @@
         android:name="com.example.endapp.ui.weather.WeatherFragment"
         android:label="@string/title_weather"
         tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/navigation_card"
+        android:name="com.example.endapp.ui.game.CardFragment"
+        android:label="@string/title_card"
+        tools:layout="@layout/fragment_card" />
 
 
 </navigation>

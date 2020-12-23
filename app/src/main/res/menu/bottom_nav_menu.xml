@@ -12,6 +12,11 @@
         android:title="@string/title_dashboard" />
 
     <item
+        android:id="@+id/navigation_card"
+        android:icon="@drawable/ic_game_24"
+        android:title="@string/title_card" />
+
+    <item
         android:id="@+id/navigation_photo"
         android:icon="@drawable/ic_camera_alt_24"
         android:title="@string/title_photo" />
