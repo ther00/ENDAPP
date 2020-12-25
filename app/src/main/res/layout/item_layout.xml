@@ -8,6 +8,5 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="A*"
         android:textSize="30sp" />
 </LinearLayout>

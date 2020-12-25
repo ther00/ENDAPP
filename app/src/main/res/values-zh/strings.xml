@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">乔翼2018110235</string>
+    <string name="title_music">音乐应用</string>
+    <string name="takephoto">拍照</string>
+    <string name="title_photo">拍照应用</string>
+    <string name="title_weather">天气应用</string>
+    <string name="title_card">翻牌游戏</string>
+    <string name="reset">重置</string>
+    <string name="button">点击我</string>
+    <string name="textView">你好世界！</string>
+    <string name="clicked">我被点击了！</string>
+    <string name="title_helloworld">你好世界</string>
+    <string name="play">播放</string>
+    <string name="prev">上一首</string>
+    <string name="next">下一首</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="musictitle">音乐播放器</string>
+</resources>

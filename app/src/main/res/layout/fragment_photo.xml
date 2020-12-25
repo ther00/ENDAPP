@@ -22,8 +22,9 @@
         <ImageView
             android:id="@+id/photo_imageView"
             android:layout_width="match_parent"
-            android:layout_height="399dp"
+            android:layout_height="416dp"
             android:background="#DDD486"
+            android:contentDescription="@string/takephoto"
             tools:src="@tools:sample/avatars" />
 
         <Button

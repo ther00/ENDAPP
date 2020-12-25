@@ -8,12 +8,11 @@ import android.os.Binder
 import android.os.IBinder
 import android.provider.MediaStore
 import android.util.Log
-import android.view.View
 import com.example.endapp.R
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
 
 class MusicService : Service() {
+
     companion object{
         val Commond = "Operate"
     }
@@ -26,9 +25,9 @@ class MusicService : Service() {
     val binder = MusicBinder()
     val MyChannel1 = "music channel"
 
-    inner class MusicBinder:Binder(){
+    inner class MusicBinder: Binder(){
         val musicName
-                get() = musicNameList.get(current)
+            get() = musicNameList.get(current)
         var currentPosition
             get() = mediaPlayer.currentPosition
             set(value) = mediaPlayer.seekTo(value)
@@ -60,7 +59,7 @@ class MusicService : Service() {
         val pendingIntent = PendingIntent.getActivity(this,1,intent, PendingIntent.FLAG_UPDATE_CURRENT)
         val notification = builder.setContentTitle("music notification")
             .setContentText("This is music service.")
-            .setSmallIcon(R.drawable.ic_music)
+            .setSmallIcon(R.drawable.ic_music_24)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
             .build()
@@ -72,7 +71,7 @@ class MusicService : Service() {
             sendBroadcast(intent2)
             val notification = builder.setContentTitle("${current+1}/${musicNameList.size}")
                 .setContentText(musicNameList.get(current))
-                .setSmallIcon(R.drawable.ic_music)
+                .setSmallIcon(R.drawable.ic_music_24)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build()

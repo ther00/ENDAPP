@@ -3,19 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_helloworld">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.endapp.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.endapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_music"
+        android:name="com.example.endapp.ui.music.MusicFragment"
+        android:label="@string/title_music"
+        tools:layout="@layout/fragment_music" />
 
     <fragment
         android:id="@+id/navigation_photo"
@@ -33,6 +27,11 @@
         android:name="com.example.endapp.ui.game.CardFragment"
         android:label="@string/title_card"
         tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/navigation_helloworld"
+        android:name="com.example.endapp.ui.helloworld.HelloworldFragment"
+        android:label="@string/title_helloworld"
+        tools:layout="@layout/fragment_helloworld" />
 
 
 </navigation>

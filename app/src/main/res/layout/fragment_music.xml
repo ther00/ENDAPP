@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DD8E89"
+    android:clickable="false"
     tools:context=".ui.music.MusicFragment">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="411dp"
+        android:layout_height="729dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,73 +24,77 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="35sp"
-            android:gravity="center"
             android:layout_marginTop="10dp"
-            android:text="音乐播放器" />
+            android:gravity="center"
+            android:text="@string/musictitle"
+            android:textSize="35sp" />
 
         <TextView
             android:id="@+id/textView_mn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:layout_marginTop="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView_count"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:gravity="center"
-            android:layout_marginTop="10dp" />
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
 
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="411dp"
             android:layout_height="30dp"
-            android:layout_marginBottom="24dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
             android:background="#77ECFB" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:onClick="onPlay"
-            android:text="play" />
+            android:text="@string/play"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:onClick="onNext"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="next" />
+            android:onClick="onNext"
+            android:text="@string/next"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:onClick="onPrev"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="prev" />
+            android:onClick="onPrev"
+            android:text="@string/prev"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:onClick="onStop"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="stop" />
+            android:onClick="onStop"
+            android:text="@string/stop"
+            tools:ignore="OnClick" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:onClick="onPause"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="pause" />
+            android:onClick="onPause"
+            android:text="@string/pause"
+            tools:ignore="OnClick" />
 
     </LinearLayout>
 
