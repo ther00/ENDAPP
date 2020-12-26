@@ -1,7 +1,6 @@
 package com.example.endapp.ui.game
 
 import android.content.res.Configuration
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

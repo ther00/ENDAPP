@@ -5,11 +5,7 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_helloworld">
 
-    <fragment
-        android:id="@+id/navigation_music"
-        android:name="com.example.endapp.ui.music.MusicFragment"
-        android:label="@string/title_music"
-        tools:layout="@layout/fragment_music" />
+
 
     <fragment
         android:id="@+id/navigation_photo"
@@ -32,6 +28,9 @@
         android:name="com.example.endapp.ui.helloworld.HelloworldFragment"
         android:label="@string/title_helloworld"
         tools:layout="@layout/fragment_helloworld" />
-
-
+    <activity
+        android:id="@+id/navigation_music"
+        android:name="com.example.endapp.ui.music.MusicActivity"
+        android:label="@string/title_music"
+        tools:layout="@layout/activity_music" />
 </navigation>

@@ -1,18 +1,12 @@
 package com.example.endapp.ui.weather
 
-import androidx.lifecycle.ViewModel
-
 import android.app.Application
-import android.content.Intent
-import android.util.Log
-import android.widget.ArrayAdapter
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.endapp.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import kotlin.concurrent.thread

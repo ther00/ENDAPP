@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DD8E89"
-    android:clickable="false"
-    tools:context=".ui.music.MusicFragment">
+    tools:context=".ui.music.MusicActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="411dp"
-        android:layout_height="729dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#BCE38E"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,22 +26,26 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="@string/musictitle"
+            android:textColor="#D58E78"
             android:textSize="35sp" />
 
         <TextView
             android:id="@+id/textView_mn"
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
+            android:textColor="#AE7387"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView_count"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textColor="#AE7387"
+            android:textSize="10sp" />
 
         <SeekBar
             android:id="@+id/seekBar"
@@ -55,47 +58,46 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
+            android:background="#86C1BB"
             android:onClick="onPlay"
-            android:text="@string/play"
-            tools:ignore="OnClick" />
+            android:text="@string/play" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginTop="5dp"
+            android:background="#86C1BB"
             android:onClick="onNext"
-            android:text="@string/next"
-            tools:ignore="OnClick" />
+            android:text="@string/next" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginTop="5dp"
+            android:background="#86C1BB"
             android:onClick="onPrev"
-            android:text="@string/prev"
-            tools:ignore="OnClick" />
+            android:text="@string/prev" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginTop="5dp"
+            android:background="#86C1BB"
             android:onClick="onStop"
-            android:text="@string/stop"
-            tools:ignore="OnClick" />
+            android:text="@string/stop" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_marginTop="5dp"
+            android:background="#86C1BB"
             android:onClick="onPause"
-            android:text="@string/pause"
-            tools:ignore="OnClick" />
+            android:text="@string/pause" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

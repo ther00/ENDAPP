@@ -1,9 +1,7 @@
 package com.example.endapp.ui.photo
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
-
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.provider.MediaStore
@@ -14,7 +12,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.endapp.R
 import kotlinx.android.synthetic.main.fragment_photo.*
-
+val REQUEST_IMAGE_CAPTURE = 1
 class PhotoFragment : Fragment() {
 
     companion object {
@@ -37,8 +35,9 @@ class PhotoFragment : Fragment() {
         photo_button.setOnClickListener {
             dispatchTakePictureIntent()
         }
+
     }
-    val REQUEST_IMAGE_CAPTURE = 1
+
 
     private fun dispatchTakePictureIntent() {
         Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->

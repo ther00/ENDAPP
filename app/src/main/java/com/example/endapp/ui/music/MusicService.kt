@@ -44,7 +44,7 @@ class MusicService : Service() {
     override fun onCreate() {
         super.onCreate()
         getMusicList()
-        val intent2 = Intent(MusicFragment.Music_Broadcast)
+        val intent2 = Intent(MusicActivity.Music_Broadcast)
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val builder : Notification.Builder
@@ -55,7 +55,7 @@ class MusicService : Service() {
         }else{
             builder = Notification.Builder(this)
         }
-        val intent = Intent(this,MusicFragment::class.java)
+        val intent = Intent(this,MusicActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(this,1,intent, PendingIntent.FLAG_UPDATE_CURRENT)
         val notification = builder.setContentTitle("music notification")
             .setContentText("This is music service.")
@@ -154,23 +154,5 @@ class MusicService : Service() {
             }
             cursor.close()
         }
-//        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-//        val builder : Notification.Builder
-//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-//            val notificationChannel = NotificationChannel(Channel_ID,"test", NotificationManager.IMPORTANCE_DEFAULT)
-//            notificationManager.createNotificationChannel(notificationChannel)
-//            builder = Notification.Builder(this,Channel_ID)
-//        }else{
-//            builder = Notification.Builder(this)
-//        }
-//        val intent = Intent(this,MainActivity::class.java)
-//        val pendingIntent = PendingIntent.getActivity(this,1,intent, PendingIntent.FLAG_UPDATE_CURRENT)
-//        val notification = builder.setSmallIcon(R.drawable.ic_music)
-//            .setContentTitle("当前正在播放：")
-//            .setContentText(musicNameList[current])
-//            .setContentIntent(pendingIntent)
-//            .setAutoCancel(true)
-//            .build()
-//        notificationManager.notify(Notification_ID,notification)
     }
 }

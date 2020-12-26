@@ -1,18 +1,15 @@
 package com.example.endapp.ui.weather
 
 import android.content.Intent
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import android.widget.ArrayAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.endapp.R
-import com.google.gson.internal.bind.ArrayTypeAdapter
 import kotlinx.android.synthetic.main.fragment_weather.*
 
 class WeatherFragment : Fragment() {
