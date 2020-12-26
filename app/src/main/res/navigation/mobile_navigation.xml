@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_helloworld">
+    app:startDestination="@+id/navigation_weather">
 
 
 
@@ -33,4 +33,9 @@
         android:name="com.example.endapp.ui.music.MusicActivity"
         android:label="@string/title_music"
         tools:layout="@layout/activity_music" />
+    <fragment
+        android:id="@+id/navigation_calculator"
+        android:name="com.example.endapp.ui.calculator.CalculatorFragment"
+        android:label="@string/title_calculator"
+        tools:layout="@layout/fragment_calculator" />
 </navigation>

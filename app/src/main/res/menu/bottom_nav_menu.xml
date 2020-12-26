@@ -2,10 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item
+    <!--<item
         android:id="@+id/navigation_helloworld"
         android:icon="@drawable/ic_helloworld_24"
-        android:title="@string/title_helloworld" />
+        android:title="@string/title_helloworld" />-->
+    <item
+        android:id="@+id/navigation_weather"
+        android:icon="@drawable/ic_cloud_24"
+        android:title="@string/title_weather" />
 
     <item
         android:id="@+id/navigation_card"
@@ -18,9 +22,9 @@
         android:title="@string/title_photo" />
 
     <item
-        android:id="@+id/navigation_weather"
-        android:icon="@drawable/ic_cloud_24"
-        android:title="@string/title_weather" />
+        android:id="@+id/navigation_calculator"
+        android:icon="@drawable/ic_calculator_24"
+        android:title="@string/title_calculator" />
 
     <item
         android:id="@+id/navigation_music"

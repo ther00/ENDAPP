@@ -16,4 +16,5 @@
     <string name="stop">STOP</string>
     <string name="musictitle">Music Player</string>
     <string name="title_helloworld">HelloWorld</string>
+    <string name="title_calculator">Calcultor</string>
 </resources>
