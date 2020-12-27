@@ -2,7 +2,6 @@ package com.example.endapp.ui.photo
 
 import android.content.Intent
 import android.graphics.Bitmap
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.fragment.app.Fragment
@@ -12,14 +11,13 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.endapp.R
 import kotlinx.android.synthetic.main.fragment_photo.*
-val REQUEST_IMAGE_CAPTURE = 1
+
 class PhotoFragment : Fragment() {
 
     companion object {
         fun newInstance() = PhotoFragment()
     }
-
-    private lateinit var viewModel: PhotoViewModel
+    val REQUEST_IMAGE_CAPTURE = 1
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,7 +28,6 @@ class PhotoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(PhotoViewModel::class.java)
         // TODO: Use the ViewModel
         photo_button.setOnClickListener {
             dispatchTakePictureIntent()

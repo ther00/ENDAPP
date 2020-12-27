@@ -43,9 +43,9 @@ class CityMainActivity : AppCompatActivity() {
             val adapter = ArrayAdapter<Forecast>(this,android.R.layout.simple_list_item_1,weather.data.forecast)
             listView.adapter = adapter
 
-            Log.d("MainActivity","${weather.cityInfo.city} ${weather.cityInfo.parent}")
+            Log.d("","${weather.cityInfo.city} ${weather.cityInfo.parent}")
         },{
-            Log.d("MainActivity2","$it")
+            Log.d("","$it")
         })
         queue.add(stringRequest)//加入字符串请求队列
     }

@@ -1,6 +1,5 @@
 package com.example.endapp.ui.calculator
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -17,7 +16,6 @@ class CalculatorFragment : Fragment(), View.OnClickListener {
         fun newInstance() = CalculatorFragment()
     }
 
-    private lateinit var viewModel: CalculatorViewModel
     private val currentInputNumSB = StringBuilder()
     private val numsList = mutableListOf<Int>()
     private val operatorsList = mutableListOf<String>()
@@ -32,7 +30,6 @@ class CalculatorFragment : Fragment(), View.OnClickListener {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(CalculatorViewModel::class.java)
         // TODO: Use the ViewModel
         //清空按钮
         textView3.setOnClickListener{
