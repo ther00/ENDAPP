@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentTransaction
 import com.example.endapp.R
 import kotlinx.android.synthetic.main.fragment_photo.*
 
@@ -18,7 +19,6 @@ class PhotoFragment : Fragment() {
         fun newInstance() = PhotoFragment()
     }
     val REQUEST_IMAGE_CAPTURE = 1
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
